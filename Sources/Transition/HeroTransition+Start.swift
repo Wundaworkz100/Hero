@@ -36,9 +36,7 @@ extension HeroTransition {
         toView.frame = fromView.frame
       }
       toView.setNeedsLayout()
-      if nil != toView.window {
-        toView.layoutIfNeeded()
-      }
+      toView.layoutIfNeeded()
     }
 
     if let fvc = fromViewController, let tvc = toViewController {
